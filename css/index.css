@@ -1,0 +1,346 @@
+.main{
+    margin-top: 10px;
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+}
+.main .focus a img{
+    width: 100%;
+    height: 100%;
+}
+.point{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0);
+    line-height: 50px;
+    text-align: center;
+    color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.lf{
+    left: 10px;
+}
+.rf{
+    right: 10px;
+}
+.po{
+    position: relative;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -50px;
+    width: 100px;
+    height: 20px;
+    padding: 0 12px;
+    background: rgba(0,0,0,0);
+    transition: all 0.3s;
+}
+.focus .po li{
+    float: left;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 6px 2px;
+    transition: all 0.3s;
+}
+.focus .po li:hover{
+    background-color: red;
+}
+.focus:hover .point{
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.focus:hover .po{
+    background: rgba(0, 0, 0, 0.3);
+}
+.focus{
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    /* background-color: purple; */
+}
+.focus ul li{
+    width: 721px;
+    height: 455px;
+}
+.newflash{
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+.news{
+    width: 100%;
+    height: 165px;
+    border: #e4e4e4 1px solid;
+}
+.new-hd{
+    height: 33px;
+    border-bottom: #e4e4e4 1px dotted;
+    padding: 0 15px;
+    line-height: 33px;
+}
+.new-hd h4{
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+}
+.new-hd .more{
+    float: right;
+}
+
+.new-hd .more::after{
+    content:"\e920";
+    font-family: "icomoon";
+}
+.new-bd{
+    padding: 5px 25px 0;
+}
+.new-bd ul li{
+    height: 24px;
+    line-height: 24px;
+    /* 文字溢出省略号处理 */
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice{
+    overflow: hidden;
+    width: 100%;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0px;
+}
+.lifeservice ul{
+    width: 252px;
+}
+.lifeservice ul li{
+    float: left;
+    width: 63px;
+    height: 60px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    margin-top: 12px;
+}
+.lifeservice ul li i{
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background:url(../images/icons.png) no-repeat -19px -15px;
+}
+.bargain{
+    margin-top: 5px;
+    width: 100%;
+    height: 76px;
+}
+.bargain img{
+    width: 100%;
+    height: 100%;
+}
+.recom{
+    height: 163px;
+    background-color: white;
+    margin-top: 12px;
+}
+.recom_hd{
+    float: left;
+    width: 200px;
+    height: 100%;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+.recom_bd {
+    float: left;
+    width: 1000px;
+    height: 100%;
+}
+.recom_bd ul {
+    width: 100%;
+    height: 100%;
+}
+.recom_bd ul li{
+    position: relative;
+    float: left;
+    padding: 0 1px;
+}
+.recom_bd ul li:nth-child(-n+5)::after{
+    content: "";
+    position: absolute;
+    top:10px;
+
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+.recom_bd ul li:first-child{
+    padding-left: 6px;
+}
+.recom_bd img{
+    height: 163px;
+}
+.suki{
+    margin-top: 10px;
+}
+.suki .st{
+    height: 30px;
+    line-height: 30px;
+}
+.suki .st .le{
+    float: left;
+    font-size: 13px;
+}
+.suki .st .ri{
+    float: right;
+    font-size: 10px;
+    padding-right: 15px;
+}
+.suki .st .ri::after{
+    content:"\e920";
+    font-family: "icomoon";
+}
+.suki .sb{
+    height: 200px;
+    border: 1px grey solid;
+    overflow: hidden;
+}
+.suki .sb ul{
+    width: 1300px;
+}
+.suki .sb ul li{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding:10px 30px;
+    text-align: center;
+}
+.suki .sb ul li:nth-child(-n+5)::before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 1px;
+    height: 100px;
+    background-color: grey;
+}
+.suki .sb ul li img{
+    width: 100%;
+}
+.floor .w{
+    margin-top: 30px;
+}
+.box_hd{
+    height: 30px;
+    border-bottom: 2px solid#c81623;
+}
+.box_hd h3{
+    float: left;
+    font-size: 18px;
+    color : #c81623;
+    font-weight: 400;
+}
+.tab_list{
+    float:right;
+    line-height: 30px;
+}
+.tab_list ul li{
+    float: left;
+}
+.tab_list ul li a{
+    padding: 0 15px;
+}
+.box_bd{
+    height: 361px;
+}
+.tab_list_item>div{
+    float: left;
+    height: 361px;
+}
+.col_210{
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.col_210 ul{
+    margin-left: 12px;
+}
+.col_210 ul li{
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: solid #ccc 1px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 34px;
+}
+.col_210 img{
+    width: 100%;
+    filter: opacity(10%) blur(3px);
+    transition: all 0.5s;
+}
+.col_210 img:hover{
+    filter:opacity(100%) blur(0);
+}
+
+.col{
+    filter: opacity(10%) blur(3px);
+    transition: all 0.5s;
+}
+.col:hover{
+    filter:opacity(100%) blur(0);
+}
+.col_329{
+    width: 329px;
+}
+.col_329 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../upload/xg.png) no-repeat -109px -47px;
+    
+}
+.col_221{
+    width: 221px;
+}
+.col_221 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../upload/xg.png) no-repeat -160px -47px;
+}
+.col_219{
+    width: 219px;
+}
+.col_219 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../upload/xg.png) no-repeat -160px -47px;
+}
+#ce{
+    width: 50px;
+    height: 200px;
+    background-color: grey;
+    position:fixed;
+    top: 400px;
+    left:-50px;
+}
+#ce span{
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    background-color: orange;
+    text-align: center;
+    padding: 10px 0;
+    top: 75px;
+    left: 50px;
+}

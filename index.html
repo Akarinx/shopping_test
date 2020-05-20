@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网站标题 -->
+    <title>pyg商城-多快好省</title>
+    <!-- 网站说明 -->
+    <meta name="description" content="pyg商城 这个好">
+    <!-- 网站关键字 -->
+    <meta name="keywords" content="手机,电脑,食品">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        window.onload = function () {
+            var oce = this.document.getElementById('ce');
+            oce.onmouseover = function () {
+                startmove(5, 0);
+            }
+            oce.onmouseout = function () {
+                startmove(-5, -50);
+            }
+
+            var timer = null;//全局定时器,先设为null
+            function startmove(speed, Target) {
+                var oDiv = document.getElementById('ce');
+                clearInterval(timer);//启动定时器前先关闭上次定时器
+                timer = setInterval(() => {
+                    //if...else分别管理运动和停止
+                    if (oDiv.offsetLeft == Target) {
+                        clearInterval(timer);
+                    } else {
+                        oDiv.style.left = oDiv.offsetLeft + speed + 'px';
+                    }
+                }, 30);
+            }
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- 快捷导航开始-->
+    <section class="short_cut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>pyg欢迎您&nbsp;&nbsp;</li>
+                    <li><a href="#">请登录&nbsp;&nbsp;</a>
+                    <li><a href="register.html" class="style_red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>我的订单</li>
+                    <li></li>
+                    <li>pyg会员</li>
+                    <li></li>
+                    <li>企业采购</li>
+                    <li></li>
+                    <li>关注品采购</li>
+                    <li></li>
+                    <li>客户服务</li>
+                    <li></li>
+                    <li>网站导航</li>
+                    <li></li>
+                    <li>随便来点</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷导航结束-->
+    <!-- header模块开始 -->
+    <header class="header w">
+        <div class="logo">
+            <h1><a href="index.html" title="pyg商城">pyg商城</a></h1>
+            <!-- logo做法 提权 -->
+        </div>
+        <div class="search">
+            <input type="search" name="" id="" placeholder="语言开发">
+            <button>搜索</button>
+        </div>
+        <div class="hotwords">
+            <a href="#" class="style_red">电脑</a>
+            <a href="#">手机</a>
+            <a href="#">电脑</a>
+            <a href="#">电脑</a>
+            <a href="#">电脑</a>
+            <a href="#">电脑</a>
+            <a href="#">电脑</a>
+        </div>
+        <div class="shopcar">
+            我的购物车
+            <i class="count">8</i>
+        </div>
+    </header>
+    <!-- header模块结束 -->
+    <!-- nav模块开始 -->
+    <nav class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">
+                    全部分类
+                </div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                        <li><a href="list.html">家用电器</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                    <li><a href="#">服装厂</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav模块结束 -->
+    <!-- 首页模块开始 -->
+    <div class="w">
+        <div class="main">
+            <div class="focus">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="upload/0134.jpg" alt="团子" title="团子">
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#" class="lf point">&lt;</a>
+                <a href="#" class="rf point">&gt;</a>
+                <ul class="po">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="newflash">
+                <div class="news">
+                    <div class="new-hd">
+                        <h4>快报</h4>
+                        <a href="#" class="more">更多</a>
+                    </div>
+                    <div class="new-bd">
+                        <ul>
+                            <li><a href="#">这是一条新闻很长很长很长很长很长很长很长很长很长很长</a></li>
+                            <li><a href="#">这是一条新闻</a></li>
+                            <li><a href="#">这是一条新闻</a></li>
+                            <li><a href="#">这是一条新闻</a></li>
+                            <li><a href="#">这是一条新闻</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lifeservice">
+                    <ul>
+                        <li>
+                            <i></i>
+                            <a style="display:block;" href="#">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a style="display:block;">话费</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="bargain">
+                    <img src="upload/-3.jpg" alt="汐">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 首页模块结束 -->
+    <!-- 推荐模块开始 -->
+    <div class="w recom">
+        <div class="recom_hd">
+            <img src="images/clock.png" alt="">
+        </div>
+        <div class="recom_bd">
+            <ul>
+                <li><a href="#"><img src="upload/3.jpg" alt="e" title="蕾米"></a></li>
+                <li><a href="#"><img src="upload/3.jpg" alt="e" title="蕾米"></a></li>
+                <li><a href="#"><img src="upload/3.jpg" alt="e" title="蕾米"></a></li>
+                <li><a href="#"><img src="upload/3.jpg" alt="e" title="蕾米"></a></li>
+                <li><a href="#"><img src="upload/3.jpg" alt="e" title="蕾米"></a></li>
+                <li><a href="#"><img src="upload/3.jpg" alt="e" title="蕾米"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 推荐模块结束 -->
+    <!-- 猜你喜欢模块开始 -->
+    <div class="suki w">
+        <div class="st">
+            <span class="le">猜你喜欢</span>
+            <a class="ri" href="#">换一批</a>
+        </div>
+        <div class="sb">
+            <ul>
+                <li>
+                    <img src="upload/3.jpg" alt="米">
+                    <div>说明</div>
+                </li>
+                <li>
+                    <img src="upload/3.jpg" alt="米">
+                    <div>说明</div>
+                </li>
+                <li>
+                    <img src="upload/3.jpg" alt="米">
+                    <div>说明</div>
+                </li>
+                <li>
+                    <img src="upload/3.jpg" alt="米">
+                    <div>说明</div>
+                </li>
+                <li>
+                    <img src="upload/3.jpg" alt="米">
+                    <div>说明</div>
+                </li>
+                <li>
+                    <img src="upload/3.jpg" alt="米">
+                    <div>说明</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 猜你喜欢模块结束 -->
+    <!-- 楼层模块开始 -->
+    <div class="floor">
+        <!-- 1楼搭建 -->
+        <div class="w jd">
+            <div class="box_hd">
+                <h3>家电</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                            </ul>
+                            <a href="#">
+                                <img src="upload/3.jpg" alt="w">
+                            </a>
+                        </div>
+                        <div class="col_329 col">
+                            <a href="#"></a>
+                        </div>
+                        <div class="col_221 col">
+                            <a href="#"></a>
+                        </div>
+                        <div class="col_221 col">
+                            <a href="#"></a>
+                        </div>
+                        <div class="col_219 col">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2楼搭建 -->
+        <div class="w sj">
+            <div class="box_hd">
+                <h3>手机</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a>|</li>
+                        <li><a href="#">热门</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="box_bd">
+                <div class="tab_content">
+                    <div class="tab_list_item">
+                        <div class="col_210">
+                            <ul>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                                <li><a href="#">节能节能</a></li>
+                            </ul>
+                            <a href="#">
+                                <img src="upload/3.jpg" alt="w">
+                            </a>
+                        </div>
+                        <div class="col_329 col">
+                            <a href="#"></a>
+                        </div>
+                        <div class="col_221 col">
+                            <a href="#"></a>
+                        </div>
+                        <div class="col_221 col">
+                            <a href="#"></a>
+                        </div>
+                        <div class="col_219 col">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 楼层模块结束 -->
+    <!-- 底部模块开始 -->
+    <footer class="footer">
+        <div class="w">
+            <div class="mod_service">
+                <ul>
+                    <li class="mod_fir">
+                        <h5></h5>
+                        <div class="sertxt">
+                            <h4>正品保障</h4>
+                            <p>好东西</p>
+                        </div>
+                    </li>
+                    <li class="mod_sec">
+                        <h5></h5>
+                        <div class="sertxt">
+                            <h4>正品保障</h4>
+                            <p>好东西</p>
+                        </div>
+                    </li>
+                    <li class="mod_thr">
+                        <h5></h5>
+                        <div class="sertxt">
+                            <h4>正品保障</h4>
+                            <p>好东西</p>
+                        </div>
+                    </li>
+                    <li class="mod_four">
+                        <h5></h5>
+                        <div class="sertxt">
+                            <h4>正品保障</h4>
+                            <p>好东西</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                </dl>
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>服务指南</dt>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                    <dd><a href="#">好东西</a></dd>
+                </dl>
+                <dl>
+                    <dt>二维码</dt>
+                    <dd>
+                        <img src="images/wx_cz.jpg" alt="">
+                        pyg客户端
+                    </dd>
+
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="">关于我们</a>
+                    |
+                    <a href="">wwwwww</a>
+                    |
+                    <a href="">wwww</a>
+                </div>
+                <div class="copyright">
+                    地址巴拉巴拉www<br />
+                    好好好
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 底部模块结束 -->
+    <!-- 侧边栏模块 -->
+    <div id='ce'>
+        <span><a href="#">分享</a></span>
+    </div>
+</body>
+
+</html>
